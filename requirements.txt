@@ -1,0 +1,4 @@
+aiohttp
+asyncpg
+python-telegram-bot
+environs
