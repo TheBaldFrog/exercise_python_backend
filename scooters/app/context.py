@@ -1,5 +1,5 @@
 import typing as tp
-import asyncpg
+import asyncpg  # type: ignore
 from app.utils import secrets
 import config
 
