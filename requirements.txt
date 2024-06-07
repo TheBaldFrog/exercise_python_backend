@@ -1,3 +1,5 @@
+# aiohttp==3.8.1
+# asyncpg==0.26.0
 aiohttp
 asyncpg
 python-telegram-bot
