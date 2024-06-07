@@ -22,7 +22,7 @@ async def create_app(args):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--secrets-dir', type=str, required=True)
+    parser.add_argument("--secrets-dir", type=str, required=True)
 
     return parser.parse_args()
 
@@ -30,10 +30,10 @@ def parse_args():
 def main():
     args = parse_args()
 
-    app = asyncio.get_event_loop().run_until_complete(create_app(args))
+    app = asyncio.run(create_app(args))
 
     web.run_app(app)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
