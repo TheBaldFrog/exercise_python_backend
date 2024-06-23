@@ -19,10 +19,10 @@ class BaseMessages(abc.ABC):
 
 class RegularUser(BaseMessages):
     def start(self) -> str:
-        return "Првиет!"
+        return "Ciao!"
 
     def help(self) -> str:
-        return "Вам нужно приобрести подписку"
+        return "Devi acquistare l'abbonamento"
 
     def echo(self, text: str) -> str:
         return f"{text}"
@@ -30,10 +30,10 @@ class RegularUser(BaseMessages):
 
 class PremiumUser(RegularUser):
     def start(self) -> str:
-        return "Здравствуйте!"
+        return "Ciao! (premium)"
 
     def help(self) -> str:
-        return "Наш менеджер скоро свяжется с вами!"
+        return "Il nostro responsabile la contatterà al più presto"
 
 
 def get_messages(user: tg.User) -> BaseMessages:
