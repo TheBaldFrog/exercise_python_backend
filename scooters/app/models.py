@@ -11,7 +11,7 @@ class User:
     id: str
 
     @classmethod
-    def from_db(cls, user_id: tp.Optional[str]) -> User:
+    def from_db(cls, user_id: tp.Optional[str]) -> tp.Optional[User]:
         if user_id:
             return User(id=user_id)
         return None
